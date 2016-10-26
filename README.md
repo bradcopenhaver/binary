@@ -15,24 +15,24 @@ The program adds "ay" to single-letter words beginning with a vowel.
 This program adds "ay" to multiple-letter words beginning with a vowel.
 * Input Example: ace
 * Output Example: aceay
-This program removes the first letter of a word that begins with a consonant and places it at the end.
+This program removes the first letter of a word that begins with a consonant and places it at the end and add "ay."
 * Input Example: cat
 * Output Example: atc
-This program removes all consecutive consonants at the beginning of a word and places them at the end.
+This program removes all consecutive consonants at the beginning of a word and places them at the end and add "ay."
 * Input Example: school
-* Output Example: oolsch
-This program removes "qu" and places it at the end of the word for word that begin with "qu."
+* Output Example: oolschay
+This program removes "qu" and places it at the end of the word for word that begin with "qu" and add "ay."
 * Input Example: quit
-* Output Example : itqu
-This program removes the consonant and "qu" for words that begin with a consonant and "qu", the places the consonant and "qu" at the end.
+* Output Example : itquay
+This program removes the consonant and "qu" for words that begin with a consonant and "qu", the places the consonant and "qu" at the end and add "ay."
 * Input Example: squeal
-* Output Example: ealsqu
-This program will remove "y" and place it at the end for word that begin with "y."
+* Output Example: ealsquay
+This program will remove "y" and place it at the end for word that begin with "y" and add "ay."
 * Input Example: yes
-* Output Example: esy
-This program will move the starting consonants of multiple words to the end of each word.
+* Output Example: esyay
+This program will move the starting consonants of multiple words to the end of each word and add "ay."
 * Input Example: hello world
-* Output Example: elloh orldw
+* Output Example: elloh orldway
 
 
 
