@@ -11,11 +11,22 @@ var translate = function(userInput) {
   }
   else if (/[b-df-hj-np-tv-z]/.test(letters[0])) {
     var firstVowel = userInput.search(/[aeiou]/);
+    var firstQ = userInput.search(/q/);
+
+    if (firstQ >=0 && letters[firstQ+1] === "u" && firstQ < firstVowel) {
+      var firstConsonants = "";
+      for (var i=0; i<firstQ+2; i++) {
+        firstConsonants += letters[i];
+      }
+      output = userInput.slice(firstQ+2) + firstConsonants + "ay";
+    }
+    else {
     var firstConsonants = "";
     for (var i=0; i<firstVowel; i++) {
       firstConsonants += letters[i];
     }
     output = userInput.slice(firstVowel) + firstConsonants + "ay";
+  }
   }
   else {
     output = userInput;
