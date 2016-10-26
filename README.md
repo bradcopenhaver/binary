@@ -30,6 +30,9 @@ This program removes the first letter of a word that begins with a consonant and
 8 This program will remove "y" and place it at the end for word that begin with "y" and add "ay."
 * Input Example: yes
 * Output Example: esyay
+This program will function the same regardless of capitalization of input.
+* Input Example: CaT
+* Output Example: aTCay
 This program will move the starting consonants of multiple words to the end of each word and add "ay."
 * Input Example: hello world
 * Output Example: elloh orldway
