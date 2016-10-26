@@ -1,6 +1,6 @@
 var output = ""
 
-var translate = function(userInput) {
+var translateWords = function(userInput) {
   var letters = userInput.split("");
   if (/[aeiou]/i.test(letters[0])) {
     output = userInput + "ay";
@@ -38,12 +38,21 @@ var translate = function(userInput) {
   return output;
 }
 
+var makeWords = function(userInput) {
+  var words = userInput.split(" ");
+  var newWords = [];
+  for (var i=0; i<words.length; i++) {
+    newWords.push(translateWords(words[i]));
+  }
+  return newWords.join(" ");
+}
+
 
 $(document).ready(function(){
   $("form").submit(function(event){
     event.preventDefault();
     var userInput = $("#inputSentence").val();
-    var result = translate(userInput);
+    var result = makeWords(userInput);
     $("#output").text(result);
 
 
