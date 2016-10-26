@@ -6,10 +6,17 @@ var translate = function(userInput) {
   if (letters[0] === "a" || letters[0] === "e" || letters[0] === "i" || letters[0] === "o" || letters[0] === "u") {
     output = userInput + "ay";
   }
-  else if (/[b-df-hj-np-tv-z]/.test(letters[0])) {
-    output = userInput.slice(1) + letters[0] + "ay";
+  else if (letters[0] === "q" && letters[1] === "u") {
+    output = userInput.slice(2) + "quay";
   }
-
+  else if (/[b-df-hj-np-tv-z]/.test(letters[0])) {
+    var firstVowel = userInput.search(/[aeiou]/);
+    var firstConsonants = "";
+    for (var i=0; i<firstVowel; i++) {
+      firstConsonants += letters[i];
+    }
+    output = userInput.slice(firstVowel) + firstConsonants + "ay";
+  }
   else {
     output = userInput;
   }
