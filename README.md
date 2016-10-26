@@ -6,36 +6,6 @@
 
 ## Description
 
-The program does nothing to non-alphabetical characters, since they do not contain consonants or vowels
-* Input Example: 3
-* Output Example: 3
-The program adds "ay" to single-letter words beginning with a vowel.
-* Input Example: i
-* Output Example: iay
-This program adds "ay" to multiple-letter words beginning with a vowel.
-* Input Example: ace
-* Output Example: aceay
-This program removes the first letter of a word that begins with a consonant and places it at the end and add "ay."
-* Input Example: cat
-* Output Example: atc
-5 This program removes all consecutive consonants at the beginning of a word and places them at the end and add "ay."
-* Input Example: school
-* Output Example: oolschay
-6 This program removes "qu" and places it at the end of the word for word that begin with "qu" and add "ay."
-* Input Example: quit
-* Output Example : itquay
-7 This program removes the consonant and "qu" for words that begin with a consonant and "qu", the places the consonant and "qu" at the end and add "ay."
-* Input Example: squeal
-* Output Example: ealsquay
-8 This program will remove "y" and place it at the end for word that begin with "y" and add "ay."
-* Input Example: yes
-* Output Example: esyay
-This program will function the same regardless of capitalization of input.
-* Input Example: CaT
-* Output Example: aTCay
-This program will move the starting consonants of multiple words to the end of each word and add "ay."
-* Input Example: hello world
-* Output Example: elloh orldway
 
 
 
